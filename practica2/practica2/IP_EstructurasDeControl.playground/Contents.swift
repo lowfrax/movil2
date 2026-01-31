@@ -64,4 +64,18 @@ default:
 }
 
 //Enum  para proporcionar menor edad
+enum personalData{
+    case nombre(String)
+    case apellido(String)
+    case edad(Int)
+    
+}
 
+let userData : personalData = .edad(25)
+switch userData{
+case .nombre(var nombre):
+    print("tu nombr es ")
+case .apellido(let lastName):
+    print("Tu apellido es ")
+
+}
